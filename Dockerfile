@@ -12,7 +12,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 	mv composer.phar /usr/local/bin/composer && \
 	php -r "unlink('composer-setup.php');"
 
-RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.4.2/drush.phar && \
+RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar && \
 	chmod +x drush.phar && \
 	mv drush.phar /usr/local/bin/drush
 
